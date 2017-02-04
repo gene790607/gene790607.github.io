@@ -1,0 +1,120 @@
+* {
+	// border: solid 1px ;
+	font-family: 微軟正黑體;
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+p {
+	font-size: 20px;
+}
+header.jumbotron {
+	background-image: url(../img/me2.jpg);
+	background-size: cover;
+	background-position: 30% 40%;
+	color: white;
+	text-align: center;
+	padding: 100px;
+}
+section {
+	text-align: center;
+	padding: 80px 0;
+}
+section .section-heading {
+	font-size: 36px;
+	margin-top: 0px;
+}
+section .section-subheading {
+	font-size: 16px;
+}
+section.story {
+	background-color: #ddd;
+}
+section.story .row hr {
+	width: 60px;
+    height: 2px;
+    background: #595959;
+    border: none;
+}
+section.story .col-md-6 {
+	padding: 20px;
+}
+section.story img{
+	margin-bottom: 20px;
+}
+section.pictures {
+	color: white;
+	padding: 0;
+}
+section.pictures .col-md-6 {
+	cursor: pointer;
+	padding: 150px;
+}
+section.pictures .col-md-6:hover p {
+	opacity: 0.7
+}
+section.pictures .col-md-6:hover:before {
+	filter:brightness(0.5);
+	background-size: 140% auto;
+}
+
+section.pictures .col-md-6:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition-duration: 0.5s;
+	background-position: center center;
+}
+section.pictures p {
+	opacity: 0.6;
+	transition-duration: 0.5s;
+}
+section.pictures .pic1:before {
+	background-image: url(../img/maruko.jpg);
+	background-size: 120% auto;
+}
+section.pictures .pic2:before {
+	background-image: url(../img/Mitaka.jpg);
+	background-size: 120% auto;
+}
+section.ask {
+	background-color: rgba(145,66,66,.5);
+	color: white;
+}
+section.ask h3 {
+	margin-bottom: 70px;
+}
+section.ask .form-control {
+	padding: 30px 12px;
+}
+.col-sea {
+	padding: 90px;
+}
+.col-sea h4{
+	text-transform: uppercase;
+}
+.col-sea img {
+	border-radius: 50%;
+	height: 200px;
+	width: 100%;	
+}
+footer {
+	background-color: #f7efef;
+	padding: 50px 0;
+	text-align: center;
+}
+#go-top {
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
