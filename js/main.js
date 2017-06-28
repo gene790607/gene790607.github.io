@@ -3,6 +3,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var target=$(this).attr('href');
 		var offset=$(target).offset();
-		$('html,body').animate({scrollTop:offset.top});
+		$('html,body').animate({scrollTop:offset.top},1000);
 	});
 });
+

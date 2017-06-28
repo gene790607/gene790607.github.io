@@ -9,6 +9,7 @@
 	<title>Chen You-Yu individual Web site</title>
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main2.css">
 	<!--[if lt IE 9]>
@@ -17,12 +18,20 @@
     <![endif]-->
 </head>
 <body>
+	<div class="nav navbar-default navbar-fixed-top" id="nav">
+		<div class="container">
+			<a class="navbar-brand" href="#">about</a>
+			<a class="navbar-brand" href="#">message</a>
+			<a class="navbar-brand navbar-right" href="#">login</a>
+		</div>
+	</div><!-- nav -->
 	<header class="jumbotron" id="header">
 		<div class="container">
 			<h3>I am building my website, please ckeck it out.</h3>
 			<h1>I'm Chen Yo-Yu</h1>
 		</div><!-- header_container -->		
 	</header><!-- header -->
+		
 	<section class="intro">
 		<div class="container">
 			<div class="row">
@@ -33,22 +42,22 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sea">
-					<a href="img/me.jpg">
-						<img src="img/me-1.jpg" alt="me">
+					<a class="example-image-link" href="img/me.jpg" data-lightbox="example-1">
+						<img class="example-image" src="img/me-1.jpg" alt="me">
 					</a>
 					<h4>shrine</h4>
 					<h6 class="text-muted">Japanese style</h6>
 				</div>
 				<div class="col-md-4 col-sea">
-					<a href="img/disney.jpg">
-						<img src="img/disney-1.jpg" alt="disney">
+					<a class="example-image-link" href="img/disney.jpg" data-lightbox="example-1">
+						<img class="example-image" src="img/disney-1.jpg" alt="disney">
 					</a>
 					<h4>disney</h4>
 					<h6 class="text-muted">Disney Ocean Park</h6>
 				</div>
 				<div class="col-md-4 col-sea">
-					<a href="img/japan.jpg">
-						<img src="img/japan-1.jpg" alt="japan">
+					<a class="example-image-link" href="img/japan.jpg" data-lightbox="example-1">
+						<img class="example-image" src="img/japan-1.jpg" alt="japan">
 					</a>
 					<h4>Odaiba, Japan</h4>
 					<h6 class="text-muted">The night view of Japan Odaiba</h6>
@@ -88,7 +97,7 @@
 	<section class="pictures">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 pic1">
+				<div class="col-md-6 pic1 assign">
 					<div class="text-panel">
 						<h1>
 							Maruko
@@ -117,7 +126,11 @@
 				<div class="col-md-12">
 					<h2 class="section-heading">What's your story travel to Japan?</h2>
 					<h3 class="section-subheading text-muted">Share with me about Japan and other countries. See you soon.</h3>
-					<input type="text" class="form-control">
+					<form class="f" action="data.php" method="get" id="go" >
+						<input type="text" class="form-control" placeholder="Tell about..." name="text" ><br>
+						<input type="submit" value="submit" class="btn btn-default" onclick="send()"><br>
+						<span id="main"></span>
+					</form>
 				</div>
 			</div>
 		</div><!-- ask_container -->
@@ -133,5 +146,6 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-</body>
+	<script src="js/lightbox.min.js"></script>
+	</body>
 </html>
